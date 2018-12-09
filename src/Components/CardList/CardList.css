@@ -1,0 +1,13 @@
+.card-list--container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-end;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.card-list--item {
+  flex: 1;
+  width: 25%;
+}
