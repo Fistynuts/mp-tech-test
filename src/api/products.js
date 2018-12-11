@@ -4,7 +4,7 @@ const searchUrl = "https://search.moonpig.com/api/products";
 const sizeParam = "size";
 const searchFacetsParam = "searchFacets";
 
-export async function searchCards(size = 12, searchFacets = "occasion_level_3:occasion%3Ewell%20done%3Enew%20job") {
+export async function searchProducts(size = 12, searchFacets = "occasion_level_3:occasion%3Ewell%20done%3Enew%20job") {
   // https://search.moonpig.com/api/products?size=12&searchFacets=occasion_level_3:occasion%3Ewell%20done%3Enew%20job
 
   const url = `${searchUrl}?${sizeParam}=${size}&${searchFacetsParam}=${searchFacets}`;

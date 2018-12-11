@@ -1,26 +1,25 @@
-import { GET_CARDS, GET_CARDS_COMPLETED } from './actions';
+import { GET_PRODUCTS, GET_PRODUCTS_COMPLETED } from './actions';
 
 const initialState = {
   isLoading: false,
-  cardCollection: [],
+  productCollection: [],
   error: null
 }
 
 export default function(state = initialState, action) {
   switch (action.type) {
-    case GET_CARDS: {
+    case GET_PRODUCTS: {
       return {
         ...state,
         isLoading: true,
         error: null
       }
     }
-    case GET_CARDS_COMPLETED: {
-      console.log(action);
+    case GET_PRODUCTS_COMPLETED: {
       return {
         ...state,
-        cardCollection: action.payload.cards.Products,
-        resultsCount: action.payload.cards.NumberOfProducts,
+        productCollection: action.payload.products.Products,
+        resultsCount: action.payload.products.NumberOfProducts,
         error: action.payload.error,
         isLoading: false
       }

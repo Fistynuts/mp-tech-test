@@ -1,22 +1,22 @@
-export const GET_CARDS = "GET_CARDS";
-export const GET_CARDS_STARTED = "GET_CARDS_STARTED";
-export const GET_CARDS_COMPLETED = "GET_CARDS_COMPLETED";
+export const GET_PRODUCTS = "GET_PRODUCTS";
+export const GET_PRODUCTS_STARTED = "GET_PRODUCTS_STARTED";
+export const GET_PRODUCTS_COMPLETED = "GET_PRODUCTS_COMPLETED";
 
-export const getCards = () => ({
-  type: GET_CARDS
+export const getProducts = () => ({
+  type: GET_PRODUCTS
 });
 
-export const getCardsCompleted = cards => ({
-  type: GET_CARDS_COMPLETED,
+export const getProductsCompleted = products => ({
+  type: GET_PRODUCTS_COMPLETED,
   payload: {
-    cards
+    products
   }
 });
 
-export const getCardsErrored = error => ({
-  type: GET_CARDS_COMPLETED,
+export const getProductsErrored = error => ({
+  type: GET_PRODUCTS_COMPLETED,
   payload: {
     error,
-    cards: []
+    products: []
   }
 });

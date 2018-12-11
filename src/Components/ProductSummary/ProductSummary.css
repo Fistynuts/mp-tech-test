@@ -1,8 +1,8 @@
-.card-summary--container {
+.product-summary--container {
   margin: 4%;
 }
 
-.card-summary--image {
+.product-summary--image {
   object-fit: contain;
   width: 100%; /* object-fit: contain only works if the image width can be calculated, we want it to be as big as possible */
 }
