@@ -1,14 +1,8 @@
 .card-summary--container {
-  display: flex;
-  flex-direction: column;
+  margin: 4%;
 }
 
 .card-summary--image {
   object-fit: contain;
-  flex: 0;
-}
-
-.card-summary--title {
-  text-align: center;
-  flex: 1;
+  width: 100%; /* object-fit: contain only works if the image width can be calculated, we want it to be as big as possible */
 }

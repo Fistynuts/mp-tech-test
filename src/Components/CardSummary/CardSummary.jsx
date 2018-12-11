@@ -8,12 +8,11 @@ export default class CardSummary extends React.PureComponent {
   static propTypes = {
     card: PropTypes.object.isRequired
   };
-
+  
   render() {
     return (
       <div className="card-summary--container">
-        <img className="card-summary--image" src={this.props.card.ProductImage.Link.Href} alt="Product" />
-        <div className="card-summary--title">{this.props.card.Title}</div>
+        <img className="card-summary--image" src={this.props.card.ProductImage.Link.Href} alt={this.props.card.Title} />
       </div>
     );
   }
