@@ -28,6 +28,7 @@ export default function(state = initialState, action) {
       return {
         ...state,
         isLoading: true,
+        detailProduct: null,
         error: null
       }
     }

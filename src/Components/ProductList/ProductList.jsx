@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import ProductSummary from '../ProductSummary/ProductSummary';
 import LoadingNotice from '../LoadingNotice/LoadingNotice';
+import ErrorNotice from '../ErrorNotice/ErrorNotice';
 
 import './ProductList.css';
 
@@ -21,11 +22,11 @@ export default class ProductList extends React.PureComponent {
 
   render() {
     return (
-      <div className="product-list--container">
+      <section className="product-list--container">
         {this.props.isLoading 
           ? <LoadingNotice />
           : this.props.error
-            ? "An error occurred"
+            ? <ErrorNotice />
               : this.props.productCollection && this.props.productCollection.length 
                 ? this.props.productCollection.map(product => (
                     <div className="product-list--item" key={product.MoonpigProductNo} >
@@ -35,7 +36,7 @@ export default class ProductList extends React.PureComponent {
                     </div>
                   ))
                 : "No products were found"}
-      </div>
+      </section>
     );
   }
 };
