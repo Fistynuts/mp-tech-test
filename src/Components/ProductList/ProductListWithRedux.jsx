@@ -2,13 +2,13 @@ import { connect } from 'react-redux';
 import ProductList from './ProductList';
 import { getProducts } from '../../redux/actions';
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   productCollection: state.products.productCollection,
   isLoading: state.products.isLoading,
   error: state.products.error
 });
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   getProducts: () => dispatch(getProducts())
 });
 
