@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ProductDetails matches the default snapshot: default 1`] = `
+exports[`ProductDetails should match the default snapshot: default 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ProductDetails
@@ -69,7 +69,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`ProductDetails matches the error snapshot: error 1`] = `
+exports[`ProductDetails should match the error snapshot: error 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ProductDetails
@@ -143,7 +143,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`ProductDetails matches the loading snapshot: loading 1`] = `
+exports[`ProductDetails should match the loading snapshot: loading 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ProductDetails
@@ -213,7 +213,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`ProductDetails matches the product snapshot: product 1`] = `
+exports[`ProductDetails should match the product snapshot: product 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ProductDetails

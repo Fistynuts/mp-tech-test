@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import ProductList from '../ProductList';
 
 describe('ProductList', () => {
+
   const getProducts = jest.fn();
   const testError = { error: 'test' };
   const testProducts = [
@@ -104,44 +105,44 @@ describe('ProductList', () => {
     getProducts.mockReset();
   });
 
-  it('matches the default snapshot', () => {
+  it('should match the default snapshot', () => {
     const app = shallow(<ProductList getProducts={getProducts} />);
     expect(app).toMatchSnapshot('default');
   });
 
-  it('matches the loading snapshot', () => {
+  it('should match the loading snapshot', () => {
     const app = shallow(<ProductList getProducts={getProducts} isLoading />);
     expect(app).toMatchSnapshot('loading');
   });
 
-  it('matches the error snapshot', () => {
+  it('should match the error snapshot', () => {
     const app = shallow(<ProductList getProducts={getProducts} error={testError} />);
     expect(app).toMatchSnapshot('error');
   });
 
-  it('matches the product results snapshot', () => {
+  it('should match the product results snapshot', () => {
     const app = shallow(<ProductList getProducts={getProducts} productCollection={testProducts} />);
     expect(app).toMatchSnapshot('results');
   });
   
-  it('calls getProducts', () => {
+  it('should call getProducts', () => {
     shallow(<ProductList getProducts={getProducts} />);
     expect(getProducts).toHaveBeenCalledTimes(1);
   });
 
-  it('contains a loading notice when loading', () => {
+  it('should contain a loading notice when loading', () => {
     const app = shallow(<ProductList getProducts={getProducts} isLoading />);
 
     expect(app.find('LoadingNotice')).toHaveLength(1);
   });
 
-  it('contains an error notice when passed an error', () => {
+  it('should contain an error notice when passed an error', () => {
     const app = shallow(<ProductList getProducts={getProducts} error={testError} />);
 
     expect(app.find('ErrorNotice')).toHaveLength(1);
   });
 
-  it('contains two ProductSummary components when passed the product results', () => {
+  it('should contain two ProductSummary components when passed the product results', () => {
     const app = shallow(<ProductList getProducts={getProducts} productCollection={testProducts} />);
 
     expect(app.find('ProductSummary')).toHaveLength(2);

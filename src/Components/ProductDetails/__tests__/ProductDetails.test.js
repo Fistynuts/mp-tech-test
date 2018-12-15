@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import ProductDetails from '../ProductDetails';
 
 describe('ProductDetails', () => {
+
   const getProductDetails = jest.fn();
   const testProductId = "testId";
   const testError = { error: "TestError" };
@@ -408,59 +409,55 @@ describe('ProductDetails', () => {
     getProductDetails.mockReset();
   });
  
-  it('matches the default snapshot', () => {
-    
+  it('should match the default snapshot', () => {
     const app = shallow(<ProductDetails getProductDetails={getProductDetails} mpProductId={testProductId} />);
 
     expect(app).toMatchSnapshot('default');
   }); 
 
-  it('matches the loading snapshot', () => {
-    
+  it('should match the loading snapshot', () => {
     const app = shallow(<ProductDetails getProductDetails={getProductDetails} mpProductId={testProductId} isLoading />);
 
     expect(app).toMatchSnapshot('loading');
   });
 
-  it('matches the error snapshot', () => {
-    
+  it('should match the error snapshot', () => {
     const app = shallow(<ProductDetails getProductDetails={getProductDetails} mpProductId={testProductId} error={testError} />);
 
     expect(app).toMatchSnapshot('error');
   });
 
-  it('matches the product snapshot', () => {
-    
+  it('should match the product snapshot', () => {
     const app = shallow(<ProductDetails getProductDetails={getProductDetails} mpProductId={testProductId} detailProduct={testProduct} />);
 
     expect(app).toMatchSnapshot('product');
   });
 
-  it('calls getProductDetails with the supplied product ID', () => {
+  it('should call getProductDetails with the supplied product ID', () => {
     shallow(<ProductDetails getProductDetails={getProductDetails} mpProductId={testProductId} />);
 
     expect(getProductDetails).toHaveBeenCalledWith(testProductId);
   });
 
-  it('by default shows a loading notice', () => {
+  it('by default should show a loading notice', () => {
     const app = shallow(<ProductDetails getProductDetails={getProductDetails} mpProductId={testProductId} />);
 
     expect(app.find('LoadingNotice')).toHaveLength(1);
   });
 
-  it('if isLoading is true, shows a loading notice', () => {
+  it('should, if isLoading is true, show a loading notice', () => {
     const app = shallow(<ProductDetails getProductDetails={getProductDetails} mpProductId={testProductId} isLoading />);
 
     expect(app.find('LoadingNotice')).toHaveLength(1);
   });
 
-  it('if an error is supplied, shows an error notice', () => {
+  it('should, if an error is supplied, show an error notice', () => {
     const app = shallow(<ProductDetails getProductDetails={getProductDetails} mpProductId={testProductId} error={testError} />);
 
     expect(app.find('ErrorNotice')).toHaveLength(1);
   });
 
-  it('if a product is supplied, shows some product details', () => {
+  it('should, if a product is supplied, show some product details', () => {
     const app = shallow(<ProductDetails getProductDetails={getProductDetails} mpProductId={testProductId} detailProduct={testProduct} />);
 
     expect(app.find('.product-details--container')).toHaveLength(1);

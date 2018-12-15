@@ -11,7 +11,7 @@ describe('ProductDetailsPage', () => {
     }
   };
 
-  it('matches the snapshot', () => {
+  it('should match the snapshot', () => {
     const app = shallow(<ProductDetailsPage match={testMatch} />);
     expect(app).toMatchSnapshot();
   });
@@ -21,5 +21,10 @@ describe('ProductDetailsPage', () => {
 
     expect(app.find('Connect(ProductDetails)')).toHaveLength(1);
   });
-});
 
+  it('should have passed the correct product ID to the ProductDetails component', () => {
+    const app = shallow(<ProductDetailsPage match={testMatch} />);
+
+    expect(app.find('Connect(ProductDetails)').prop('mpProductId')).toEqual(testProductId);
+  });
+});

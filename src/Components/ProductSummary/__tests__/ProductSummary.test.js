@@ -51,7 +51,7 @@ describe('ProductSummary', () => {
     }
   };
 
-  it('matches the snapshot', () => {
+  it('should match the snapshot', () => {
     const app = shallow(<ProductSummary product={testProduct} />);
     expect(app).toMatchSnapshot();
   });
