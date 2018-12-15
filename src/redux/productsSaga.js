@@ -1,5 +1,11 @@
 import { put, takeLatest, call } from 'redux-saga/effects';
-import { GET_PRODUCTS, getProductsCompleted, getProductsErrored } from './actions';
+import { 
+  GET_PRODUCTS, 
+  getProductsCompleted, 
+  getProductsErrored, 
+  GET_PRODUCT_DETAILS, 
+  getProductDetailsCompleted, 
+  getProductDetailsErrored } from './actions';
 import * as Api from '../api/products';
 
 function* getProductsSaga() {
@@ -16,4 +22,20 @@ function* getProductsSaga() {
 
 export function* watchGetProducts() {
   yield takeLatest(GET_PRODUCTS, getProductsSaga);
+}
+
+function* getProductDetailsSaga() {
+  
+  try {
+    const response = yield call(Api.getProductDetails);
+    yield put(getProductDetailsCompleted(response));
+  } 
+  catch (e) {
+    console.error('error in getProductDetailsSaga');
+    yield put(getProductDetailsErrored(e));
+  }
+}
+
+export function* watchGetProductDetails() {
+  yield takeLatest(GET_PRODUCT_DETAILS, getProductDetailsSaga);
 }

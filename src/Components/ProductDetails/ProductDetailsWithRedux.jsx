@@ -1,17 +1,15 @@
 import { connect } from 'react-redux';
 import ProductDetails from './ProductDetails';
-//import { getProductDetails } from '../../redux/actions';
+import { getProductDetails } from '../../redux/actions';
 
-// const productSelector = (productId, products) => {
-//   return products.find(p => p.ProductId === productId);
-// };
-
-const mapStateToProps = (state, props) => ({
-  product: state.products.detailProduct
+const mapStateToProps = state => ({
+  detailProduct: state.products.detailProduct,
+  isLoading: state.products.isLoading,
+  error: state.products.error
 });
 
 const mapDispatchToProps = dispatch => ({
-  //getProductDetails: productId => dispatch(getProductDetails(productId))
+  getProductDetails: mpProductId => dispatch(getProductDetails(mpProductId))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductDetails);

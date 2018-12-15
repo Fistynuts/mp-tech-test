@@ -1,6 +1,7 @@
 export const GET_PRODUCTS = "GET_PRODUCTS";
-export const GET_PRODUCTS_STARTED = "GET_PRODUCTS_STARTED";
 export const GET_PRODUCTS_COMPLETED = "GET_PRODUCTS_COMPLETED";
+export const GET_PRODUCT_DETAILS = "GET_PRODUCT_DETAILS";
+export const GET_PRODUCT_DETAILS_COMPLETED = "GET_PRODUCT_DETAILS_COMPLETED";
 
 export const getProducts = () => ({
   type: GET_PRODUCTS
@@ -20,3 +21,22 @@ export const getProductsErrored = error => ({
     products: []
   }
 });
+
+export const getProductDetails = () => ({
+  type: GET_PRODUCT_DETAILS
+});
+
+export const getProductDetailsCompleted = product => ({
+  type: GET_PRODUCT_DETAILS_COMPLETED,
+  payload: {
+    product,
+  }
+});
+
+export const getProductDetailsErrored = error => ({
+  type: GET_PRODUCT_DETAILS_COMPLETED, 
+  payload: {
+    error,
+    product: null
+  }
+})

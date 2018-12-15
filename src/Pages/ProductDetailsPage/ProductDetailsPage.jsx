@@ -5,7 +5,7 @@ export default class ProductDetailsPage extends React.PureComponent {
   render() {
     return (
       <div>
-        <ProductDetails productId={this.props.match.params.productId} />
+        <ProductDetails mpProductId={this.props.match.params.mpProductId} />
       </div>
     );
   }

@@ -27,8 +27,8 @@ export default class ProductList extends React.PureComponent {
             ? "An error occurred"
               : this.props.productCollection && this.props.productCollection.length 
                 ? this.props.productCollection.map(product => (
-                    <div className="product-list--item" key={product.ProductId} >
-                      <Link to={`/details/${product.ProductId}`}  >
+                    <div className="product-list--item" key={product.MoonpigProductNo} >
+                      <Link to={`/details/${product.MoonpigProductNo}`}  >
                         <ProductSummary product={product} />
                       </Link>
                     </div>

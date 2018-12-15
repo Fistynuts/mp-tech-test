@@ -9,7 +9,7 @@ export default class AppRouter extends React.PureComponent {
       <Router>
         <div>
           <Route path='/' exact component={ProductListingsPage} />
-          <Route path='/details/:productId' component={ProductDetailsPage} />
+          <Route path='/details/:mpProductId' component={ProductDetailsPage} />
         </div>
       </Router>
     );
