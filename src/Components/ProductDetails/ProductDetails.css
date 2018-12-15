@@ -1,0 +1,35 @@
+.product-details--container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.product-details--image-container {
+  flex: 1;
+}
+
+.product-details--image {
+  object-fit: contain;
+  width: 100%; /* object-fit: contain only works if the image width can be calculated, we want it to be as big as possible */
+}
+
+.product-details--detail-container {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  margin-left: 1rem;
+}
+
+.product-details--buy-button {
+  padding: 1rem;
+  align-self: end;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #08c455;
+  border: none;
+  color: white;
+}

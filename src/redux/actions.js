@@ -22,8 +22,13 @@ export const getProductsErrored = error => ({
   }
 });
 
-export const getProductDetails = () => ({
-  type: GET_PRODUCT_DETAILS
+export const getProductDetails = mpProductId => ({
+  type: GET_PRODUCT_DETAILS,
+  payload: {
+    params: { 
+      mpProductId 
+    }
+  }
 });
 
 export const getProductDetailsCompleted = product => ({

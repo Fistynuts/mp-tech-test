@@ -3,7 +3,7 @@ import { getDataIfOk } from './utils';
 const searchUrl = "https://search.moonpig.com/api/products";
 const searchSizeParam = "size";
 const searchFacetsParam = "searchFacets";
-const detailsUrl = "https://www.moonpig.com/uk/api/product/product/?mpn=pu1162";
+const detailsUrl = "https://www.moonpig.com/uk/api/product/product/";
 const detailsProductIdParam = "mpn";
 
 export async function searchProducts(size = 12, searchFacets = "occasion_level_3:occasion%3Ewell%20done%3Enew%20job") {

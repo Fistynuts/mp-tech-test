@@ -24,10 +24,10 @@ export function* watchGetProducts() {
   yield takeLatest(GET_PRODUCTS, getProductsSaga);
 }
 
-function* getProductDetailsSaga() {
+function* getProductDetailsSaga(action) {
   
   try {
-    const response = yield call(Api.getProductDetails);
+    const response = yield call(Api.getProductDetails, action.payload.params.mpProductId);
     yield put(getProductDetailsCompleted(response));
   } 
   catch (e) {

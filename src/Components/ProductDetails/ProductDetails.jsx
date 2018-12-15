@@ -1,6 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 
+import "./ProductDetails.css";
+
 export default class ProductDetails extends React.PureComponent {
 
   static propTypes = {
@@ -17,12 +19,20 @@ export default class ProductDetails extends React.PureComponent {
 
   render() {
     return (
-      <div>
+      <div className="product-details--container">
         { this.props.detailProduct 
           ? ( 
             <>
-              <img src={this.props.detailProduct.ImageUrls[0].ImageUrl} alt={this.props.detailProduct.Title} />
-              <h1>{this.props.detailProduct.Title}</h1>
+              <div className="product-details--image-container">
+                <img 
+                  src={this.props.detailProduct.ImageUrls[0].ImageUrl} 
+                  alt={this.props.detailProduct.Title} 
+                  className="product-details--image" />
+              </div>
+              <div className="product-details--detail-container">
+                <h1>{this.props.detailProduct.Title}</h1>
+                <button type="button" className="product-details--buy-button">Buy Me</button>
+              </div>
             </> )
           : this.props.isLoading 
           ? "Loading, please wait..." 
