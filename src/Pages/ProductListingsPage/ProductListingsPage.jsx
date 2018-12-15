@@ -5,7 +5,7 @@ export default class ProductListingsPage extends React.PureComponent {
 
   render() {
     return (
-      <div>
+      <div role="main">
         <ProductList />
       </div>
     );

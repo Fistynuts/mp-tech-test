@@ -2,6 +2,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import ProductSummary from '../ProductSummary/ProductSummary';
+import LoadingNotice from '../LoadingNotice/LoadingNotice';
 
 import './ProductList.css';
 
@@ -22,7 +23,7 @@ export default class ProductList extends React.PureComponent {
     return (
       <div className="product-list--container">
         {this.props.isLoading 
-          ? "Loading, please wait..." 
+          ? <LoadingNotice />
           : this.props.error
             ? "An error occurred"
               : this.props.productCollection && this.props.productCollection.length 

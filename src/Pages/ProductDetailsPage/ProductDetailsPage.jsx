@@ -4,7 +4,7 @@ import ProductDetails from '../../Components/ProductDetails';
 export default class ProductDetailsPage extends React.PureComponent {
   render() {
     return (
-      <div>
+      <div role="main">
         <ProductDetails mpProductId={this.props.match.params.mpProductId} />
       </div>
     );

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import LoadingNotice from '../LoadingNotice/LoadingNotice';
 
 import "./ProductDetails.css";
 
@@ -35,7 +36,7 @@ export default class ProductDetails extends React.PureComponent {
               </div>
             </> )
           : this.props.isLoading 
-          ? "Loading, please wait..." 
+          ? <LoadingNotice />
           : this.props.error 
           ? "An error occurred"
           : null
