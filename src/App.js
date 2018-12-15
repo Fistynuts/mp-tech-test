@@ -4,7 +4,7 @@ import './App.css';
 import AppRouter from './Components/AppRouter/AppRouter';
 import store from './redux/store';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <Provider store={store}>
@@ -12,6 +12,4 @@ class App extends Component {
       </Provider>
     );
   }
-}
-
-export default App;
+};

@@ -20,10 +20,6 @@ export async function searchProducts(size = 12, searchFacets = "occasion_level_3
     };
 
     const response = await fetch(url, fetchOptions);
-
-    console.log('successful fetch response:');
-    console.log(response);
-
     const data = await getDataIfOk(response);
     
     console.log('data was ok:');
@@ -52,10 +48,6 @@ export async function getProductDetails(productId) {
     };
 
     const response = await fetch(url, fetchOptions);
-
-    console.log('successful fetch response:');
-    console.log(response);
-
     const data = await getDataIfOk(response);
     
     console.log('data was ok:');

@@ -1,0 +1,881 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductDetails matches the default snapshot: default 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProductDetails
+    getProductDetails={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "testId",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    mpProductId="testId"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {},
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {},
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`ProductDetails matches the error snapshot: error 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProductDetails
+    error={
+      Object {
+        "error": "TestError",
+      }
+    }
+    getProductDetails={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "testId",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    mpProductId="testId"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {},
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {},
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`ProductDetails matches the loading snapshot: loading 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProductDetails
+    getProductDetails={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "testId",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    isLoading={true}
+    mpProductId="testId"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {},
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {},
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`ProductDetails matches the product snapshot: product 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProductDetails
+    detailProduct={
+      Object {
+        "AdditionalInfo": "",
+        "AvailableSizes": Array [
+          Object {
+            "AvailableSubstrates": null,
+            "CanPrepay": false,
+            "Category": Object {
+              "Id": 1,
+              "Name": "Greeting Cards",
+            },
+            "Currency": "£",
+            "DefaultNoOfPages": 4,
+            "Description": "Lrg",
+            "DisplayName": "Large Card",
+            "DisplayOrder": 4,
+            "Id": 5,
+            "Kind": Object {
+              "Category": Object {
+                "Id": 1,
+                "Name": "Greeting Cards",
+              },
+              "Id": 1,
+              "Name": "Greeting Card",
+            },
+            "MinimumBundle": 1,
+            "Name": "Large Card",
+            "PostageSize": Object {
+              "Id": 2,
+              "Name": "Large Letter",
+            },
+            "Price": 5.99,
+            "Weights": Object {
+              "EnvelopeWeight": 24,
+              "ItemWeight": 106,
+            },
+          },
+          Object {
+            "AvailableSubstrates": null,
+            "CanPrepay": false,
+            "Category": Object {
+              "Id": 1,
+              "Name": "Greeting Cards",
+            },
+            "Currency": "£",
+            "DefaultNoOfPages": 4,
+            "Description": "Sml",
+            "DisplayName": "Card Pack",
+            "DisplayOrder": 2,
+            "Id": 8,
+            "Kind": Object {
+              "Category": Object {
+                "Id": 1,
+                "Name": "Greeting Cards",
+              },
+              "Id": 1,
+              "Name": "Greeting Card",
+            },
+            "MinimumBundle": 4,
+            "Name": "Small Card",
+            "PostageSize": Object {
+              "Id": 1,
+              "Name": "Letter",
+            },
+            "Price": 1.5,
+            "Weights": Object {
+              "EnvelopeWeight": 11,
+              "ItemWeight": 15,
+            },
+          },
+          Object {
+            "AvailableSubstrates": null,
+            "CanPrepay": false,
+            "Category": Object {
+              "Id": 15,
+              "Name": "Frames",
+            },
+            "Currency": "£",
+            "DefaultNoOfPages": 1,
+            "Description": "FSB",
+            "DisplayName": "Standard Frame - Black",
+            "DisplayOrder": 50,
+            "Id": 54,
+            "Kind": Object {
+              "Category": Object {
+                "Id": 15,
+                "Name": "Frames",
+              },
+              "Id": 19,
+              "Name": "Framed Print",
+            },
+            "MinimumBundle": 1,
+            "Name": "Standard Frame - Black",
+            "PostageSize": Object {
+              "Id": 4,
+              "Name": "Packet",
+            },
+            "Price": 7,
+            "Weights": Object {
+              "EnvelopeWeight": 0,
+              "ItemWeight": 100,
+            },
+          },
+          Object {
+            "AvailableSubstrates": null,
+            "CanPrepay": false,
+            "Category": Object {
+              "Id": 15,
+              "Name": "Frames",
+            },
+            "Currency": "£",
+            "DefaultNoOfPages": 1,
+            "Description": "FSW",
+            "DisplayName": "Standard Frame - White",
+            "DisplayOrder": 51,
+            "Id": 55,
+            "Kind": Object {
+              "Category": Object {
+                "Id": 15,
+                "Name": "Frames",
+              },
+              "Id": 19,
+              "Name": "Framed Print",
+            },
+            "MinimumBundle": 1,
+            "Name": "Standard Frame - White",
+            "PostageSize": Object {
+              "Id": 4,
+              "Name": "Packet",
+            },
+            "Price": 7,
+            "Weights": Object {
+              "EnvelopeWeight": 0,
+              "ItemWeight": 100,
+            },
+          },
+          Object {
+            "AvailableSubstrates": null,
+            "CanPrepay": false,
+            "Category": Object {
+              "Id": 15,
+              "Name": "Frames",
+            },
+            "Currency": "£",
+            "DefaultNoOfPages": 1,
+            "Description": "FLB",
+            "DisplayName": "Large Frame - Black",
+            "DisplayOrder": 55,
+            "Id": 56,
+            "Kind": Object {
+              "Category": Object {
+                "Id": 15,
+                "Name": "Frames",
+              },
+              "Id": 19,
+              "Name": "Framed Print",
+            },
+            "MinimumBundle": 1,
+            "Name": "Large Frame - Black",
+            "PostageSize": Object {
+              "Id": 4,
+              "Name": "Packet",
+            },
+            "Price": 9,
+            "Weights": Object {
+              "EnvelopeWeight": 0,
+              "ItemWeight": 100,
+            },
+          },
+          Object {
+            "AvailableSubstrates": null,
+            "CanPrepay": false,
+            "Category": Object {
+              "Id": 15,
+              "Name": "Frames",
+            },
+            "Currency": "£",
+            "DefaultNoOfPages": 1,
+            "Description": "FLW",
+            "DisplayName": "Large Frame - White",
+            "DisplayOrder": 56,
+            "Id": 57,
+            "Kind": Object {
+              "Category": Object {
+                "Id": 15,
+                "Name": "Frames",
+              },
+              "Id": 19,
+              "Name": "Framed Print",
+            },
+            "MinimumBundle": 1,
+            "Name": "Large Frame - White",
+            "PostageSize": Object {
+              "Id": 4,
+              "Name": "Packet",
+            },
+            "Price": 9,
+            "Weights": Object {
+              "EnvelopeWeight": 0,
+              "ItemWeight": 100,
+            },
+          },
+          Object {
+            "AvailableSubstrates": null,
+            "CanPrepay": false,
+            "Category": Object {
+              "Id": 1,
+              "Name": "Greeting Cards",
+            },
+            "Currency": "£",
+            "DefaultNoOfPages": 4,
+            "Description": "XLrg",
+            "DisplayName": "Giant Card",
+            "DisplayOrder": 4,
+            "Id": 133,
+            "Kind": Object {
+              "Category": Object {
+                "Id": 1,
+                "Name": "Greeting Cards",
+              },
+              "Id": 1,
+              "Name": "Greeting Card",
+            },
+            "MinimumBundle": 1,
+            "Name": "Giant Card",
+            "PostageSize": Object {
+              "Id": 4,
+              "Name": "Packet",
+            },
+            "Price": 9.99,
+            "Weights": Object {
+              "EnvelopeWeight": 0,
+              "ItemWeight": 200,
+            },
+          },
+        ],
+        "Description": "Happy Anniversary",
+        "DesignFeatureTags": Array [
+          "Portrait",
+        ],
+        "ImageUrls": Array [
+          Object {
+            "ImageNo": 1,
+            "ImageUrl": "https://assets.moonpig.com/api/images/Cardshop/1/product/PU1162/1",
+          },
+          Object {
+            "ImageNo": 2,
+            "ImageUrl": "https://assets.moonpig.com/api/images/Cardshop/1/product/PU1162/2",
+          },
+          Object {
+            "ImageNo": 3,
+            "ImageUrl": "https://assets.moonpig.com/api/images/Cardshop/1/product/PU1162/3",
+          },
+          Object {
+            "ImageNo": 4,
+            "ImageUrl": "https://assets.moonpig.com/api/images/Cardshop/1/product/PU1162/4",
+          },
+        ],
+        "InStock": true,
+        "IsCustomisable": true,
+        "IsMultipack": false,
+        "Metadata": Object {
+          "Default": false,
+          "Quality": 0,
+        },
+        "MoonpigProductNo": "PU1162",
+        "Name": "PU1162",
+        "OccasionId": 1,
+        "PageCountOverride": null,
+        "Pages": Array [
+          Object {
+            "PageNo": 1,
+            "Template": Object {
+              "FontColors": null,
+              "FontOptions": null,
+              "FontSizes": null,
+              "Height": 0,
+              "Id": 82125,
+              "ImageObjects": null,
+              "ShapeObjects": null,
+              "TextCustomisations": null,
+              "TextObjects": null,
+              "Width": 0,
+              "XBleed": 0,
+              "YBleed": 0,
+            },
+          },
+          Object {
+            "PageNo": 2,
+            "Template": Object {
+              "FontColors": null,
+              "FontOptions": null,
+              "FontSizes": null,
+              "Height": 0,
+              "Id": 67716,
+              "ImageObjects": null,
+              "ShapeObjects": null,
+              "TextCustomisations": null,
+              "TextObjects": null,
+              "Width": 0,
+              "XBleed": 0,
+              "YBleed": 0,
+            },
+          },
+          Object {
+            "PageNo": 3,
+            "Template": Object {
+              "FontColors": null,
+              "FontOptions": null,
+              "FontSizes": null,
+              "Height": 0,
+              "Id": 67720,
+              "ImageObjects": null,
+              "ShapeObjects": null,
+              "TextCustomisations": null,
+              "TextObjects": null,
+              "Width": 0,
+              "XBleed": 0,
+              "YBleed": 0,
+            },
+          },
+          Object {
+            "PageNo": 4,
+            "Template": Object {
+              "FontColors": null,
+              "FontOptions": null,
+              "FontSizes": null,
+              "Height": 0,
+              "Id": 82140,
+              "ImageObjects": null,
+              "ShapeObjects": null,
+              "TextCustomisations": null,
+              "TextObjects": null,
+              "Width": 0,
+              "XBleed": 0,
+              "YBleed": 0,
+            },
+          },
+        ],
+        "ProductCategoryGroup": Object {
+          "Name": "Personalised Cards",
+          "PageUrl": "https://www.moonpig.com/uk/personalised-cards",
+          "SeoPath": "personalised-cards/",
+        },
+        "ProductCategoryId": 1,
+        "ProductId": "92640",
+        "ProductUrl": "https://www.moonpig.com/uk/personalised-cards/anniversary-card-happy-anniversary-photo-upload/pu1162",
+        "PublishedOnSite": true,
+        "RangeId": 16321,
+        "Rank": 9999,
+        "SeoPath": "Anniversary-Card-Happy-Anniversary-Photo-Upload",
+        "Size": Object {
+          "AvailableSubstrates": Array [],
+          "CanPrepay": false,
+          "Category": Object {
+            "Id": 1,
+            "Name": "Greeting Cards",
+          },
+          "Currency": "£",
+          "DefaultNoOfPages": 4,
+          "Description": "Std",
+          "DisplayName": "Standard Card",
+          "DisplayOrder": 3,
+          "Id": 1,
+          "Kind": Object {
+            "Category": Object {
+              "Id": 1,
+              "Name": "Greeting Cards",
+            },
+            "Id": 1,
+            "Name": "Greeting Card",
+          },
+          "MinimumBundle": 1,
+          "Name": "Standard Card",
+          "PostageSize": Object {
+            "Id": 1,
+            "Name": "Letter",
+          },
+          "Price": 3.49,
+          "Weights": Object {
+            "EnvelopeWeight": 8,
+            "ItemWeight": 22,
+          },
+        },
+        "SizeName": "Standard Card",
+        "SoldOut": false,
+        "StyleId": 17,
+        "SupplierId": 4973,
+        "SupplierNo": "PU1162",
+        "ThumbnailUrl": "https://d1xkhapf8f3lxw.cloudfront.net/api/images/Cardshop/1/product/PU1162",
+        "Title": "Anniversary Card - Happy Anniversary - Photo Upload",
+        "UndeliverableDates": Array [],
+      }
+    }
+    getProductDetails={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "testId",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    mpProductId="testId"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="product-details--image-container"
+        >
+          <img
+            alt="Anniversary Card - Happy Anniversary - Photo Upload"
+            className="product-details--image"
+            src="https://assets.moonpig.com/api/images/Cardshop/1/product/PU1162/1"
+          />
+        </div>,
+        <section
+          className="product-details--detail-container"
+        >
+          <h1>
+            Anniversary Card - Happy Anniversary - Photo Upload
+          </h1>
+          <button
+            className="product-details--buy-button"
+            type="button"
+          >
+            Buy Me
+          </button>
+        </section>,
+      ],
+      "className": "product-details--container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <img
+            alt="Anniversary Card - Happy Anniversary - Photo Upload"
+            className="product-details--image"
+            src="https://assets.moonpig.com/api/images/Cardshop/1/product/PU1162/1"
+          />,
+          "className": "product-details--image-container",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Anniversary Card - Happy Anniversary - Photo Upload",
+            "className": "product-details--image",
+            "src": "https://assets.moonpig.com/api/images/Cardshop/1/product/PU1162/1",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              Anniversary Card - Happy Anniversary - Photo Upload
+            </h1>,
+            <button
+              className="product-details--buy-button"
+              type="button"
+            >
+              Buy Me
+            </button>,
+          ],
+          "className": "product-details--detail-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Anniversary Card - Happy Anniversary - Photo Upload",
+            },
+            "ref": null,
+            "rendered": "Anniversary Card - Happy Anniversary - Photo Upload",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Buy Me",
+              "className": "product-details--buy-button",
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": "Buy Me",
+            "type": "button",
+          },
+        ],
+        "type": "section",
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="product-details--image-container"
+          >
+            <img
+              alt="Anniversary Card - Happy Anniversary - Photo Upload"
+              className="product-details--image"
+              src="https://assets.moonpig.com/api/images/Cardshop/1/product/PU1162/1"
+            />
+          </div>,
+          <section
+            className="product-details--detail-container"
+          >
+            <h1>
+              Anniversary Card - Happy Anniversary - Photo Upload
+            </h1>
+            <button
+              className="product-details--buy-button"
+              type="button"
+            >
+              Buy Me
+            </button>
+          </section>,
+        ],
+        "className": "product-details--container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <img
+              alt="Anniversary Card - Happy Anniversary - Photo Upload"
+              className="product-details--image"
+              src="https://assets.moonpig.com/api/images/Cardshop/1/product/PU1162/1"
+            />,
+            "className": "product-details--image-container",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Anniversary Card - Happy Anniversary - Photo Upload",
+              "className": "product-details--image",
+              "src": "https://assets.moonpig.com/api/images/Cardshop/1/product/PU1162/1",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1>
+                Anniversary Card - Happy Anniversary - Photo Upload
+              </h1>,
+              <button
+                className="product-details--buy-button"
+                type="button"
+              >
+                Buy Me
+              </button>,
+            ],
+            "className": "product-details--detail-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Anniversary Card - Happy Anniversary - Photo Upload",
+              },
+              "ref": null,
+              "rendered": "Anniversary Card - Happy Anniversary - Photo Upload",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Buy Me",
+                "className": "product-details--buy-button",
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": "Buy Me",
+              "type": "button",
+            },
+          ],
+          "type": "section",
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

@@ -36,11 +36,9 @@ export default class ProductDetails extends React.PureComponent {
             </section>
           </section> 
           )
-        : this.props.isLoading 
+        : this.props.isLoading || !this.props.error
         ? <LoadingNotice />
-        : this.props.error 
-        ? <ErrorNotice />
-        : null
+        : <ErrorNotice />
     );
   }
 };
