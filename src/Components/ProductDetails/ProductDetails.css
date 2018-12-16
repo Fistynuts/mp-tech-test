@@ -34,9 +34,9 @@
 .product-details--buy-button {
   padding: 1rem;
   align-self: end;
-  background-color: #08c455;
-  border: none;
-  color: white;
+  background-color: white;
+  border: #08c455 solid 0.2rem;
+  color: black;
   margin-top: 1rem;
   min-width: 18rem;
 }
