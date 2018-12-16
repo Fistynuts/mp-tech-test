@@ -9,7 +9,7 @@ import {
 } from './actions';
 import * as Api from '../api/products';
 
-function* getProductsSaga() {
+export function* getProductsSaga() {
   
   try {
     const response = yield call(Api.searchProducts);
@@ -24,7 +24,7 @@ export function* watchGetProducts() {
   yield takeLatest(GET_PRODUCTS, getProductsSaga);
 }
 
-function* getProductDetailsSaga(action) {
+export function* getProductDetailsSaga(action) {
   
   try {
     const response = yield call(Api.getProductDetails, action.payload.params.mpProductId);

@@ -21,7 +21,6 @@ export default function (state = initialState, action) {
       return {
         ...state,
         productCollection: action.payload.products.Products,
-        resultsCount: action.payload.products.NumberOfProducts,
         error: action.payload.error,
         isLoading: false
       };
