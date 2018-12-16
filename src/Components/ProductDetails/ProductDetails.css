@@ -1,14 +1,13 @@
 .product-details--container {
   margin-left: auto;
   margin-right: auto;
-  /* padding-left: 1rem;
-  padding-right: 1rem; */
   max-width: 60rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
+/* Ensure an equal margin around each child so the spacing behaves properly when moving between vertical and horizontal layout */
 .product-details--container > * {
   margin: 1rem;
 }
@@ -17,7 +16,6 @@
   flex: 1;
   min-width: 16rem;
   max-height: 32rem;
-  /* margin: 1rem 0; */
 }
 
 .product-details--image {
@@ -30,9 +28,7 @@
   display: flex;
   flex-direction: column;
   flex: 1.5;
-  /* margin: 1rem 2rem; */
   justify-content: space-between;
-  /* min-width: 24rem; */
 }
 
 .product-details--buy-button {

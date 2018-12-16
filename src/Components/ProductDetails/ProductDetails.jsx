@@ -20,6 +20,8 @@ export default class ProductDetails extends React.PureComponent {
   }
 
   render() {
+    // TODO: Possibly break the product detail out into another component
+    // Also it'd be nice to have a meaningful ALT text for the image.
     return (
       this.props.detailProduct 
         ? ( 

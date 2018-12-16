@@ -147,4 +147,10 @@ describe('ProductList', () => {
 
     expect(app.find('ProductSummary')).toHaveLength(2);
   });
+
+  it('should contain a no products found notice when passed an empty results array', () => {
+    const app = shallow(<ProductList getProducts={getProducts} productCollection={[]} />);
+
+    expect(app.find('.product-list--no-products-notice')).toHaveLength(1);
+  });
 });

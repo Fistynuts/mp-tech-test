@@ -26,16 +26,16 @@ export default class ProductList extends React.PureComponent {
         {this.props.isLoading 
           ? <LoadingNotice />
           : this.props.error
-            ? <ErrorNotice />
-              : this.props.productCollection && this.props.productCollection.length 
-                ? this.props.productCollection.map(product => (
-                    <div className="product-list--item" key={product.MoonpigProductNo} >
-                      <Link to={`/details/${product.MoonpigProductNo}`}  >
-                        <ProductSummary product={product} />
-                      </Link>
-                    </div>
-                  ))
-                : "No products were found"}
+          ? <ErrorNotice />
+          : this.props.productCollection && this.props.productCollection.length 
+          ? this.props.productCollection.map(product => (
+              <div className="product-list--item" key={product.MoonpigProductNo} >
+                <Link to={`/details/${product.MoonpigProductNo}`}  >
+                  <ProductSummary product={product} />
+                </Link>
+              </div>
+            ))
+          : <h1 className="product-list--no-products-notice">No products were found</h1>}
       </section>
     );
   }

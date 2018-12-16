@@ -1,3 +1,8 @@
+/* NOTE:
+   API requests will fail if CORS is enabled. This is due to the server config.
+   To bypass, use a proxy or plugin such as https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi
+*/
+
 import { getDataIfOk } from './utils';
 
 const searchUrl = "https://search.moonpig.com/api/products";
