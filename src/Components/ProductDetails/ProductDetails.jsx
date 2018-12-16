@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import LoadingNotice from '../LoadingNotice/LoadingNotice';
 import ErrorNotice from '../ErrorNotice/ErrorNotice';
 
-import "./ProductDetails.css";
+import './ProductDetails.css';
 
 export default class ProductDetails extends React.PureComponent {
 
@@ -12,7 +12,13 @@ export default class ProductDetails extends React.PureComponent {
     detailProduct: PropTypes.objectOf(PropTypes.any),
     getProductDetails: PropTypes.func.isRequired,
     isLoading: PropTypes.bool,
-    error: PropTypes.object
+    error: PropTypes.objectOf(PropTypes.any)
+  };
+  
+  static defaultProps = {
+    detailProduct: null,
+    isLoading: true,
+    error: null
   };
 
   componentDidMount() {
@@ -43,4 +49,4 @@ export default class ProductDetails extends React.PureComponent {
         : <ErrorNotice />
     );
   }
-};
+}

@@ -7,4 +7,4 @@ export default class ErrorNotice extends React.PureComponent {
       <h1>An error occurred</h1>
     );
   }
-};
+}

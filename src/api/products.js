@@ -5,13 +5,13 @@
 
 import { getDataIfOk } from './utils';
 
-const searchUrl = "https://search.moonpig.com/api/products";
-const searchSizeParam = "size";
-const searchFacetsParam = "searchFacets";
-const detailsUrl = "https://www.moonpig.com/uk/api/product/product/";
-const detailsProductIdParam = "mpn";
+const searchUrl = 'https://search.moonpig.com/api/products';
+const searchSizeParam = 'size';
+const searchFacetsParam = 'searchFacets';
+const detailsUrl = 'https://www.moonpig.com/uk/api/product/product/';
+const detailsProductIdParam = 'mpn';
 
-export async function searchProducts(size = 12, searchFacets = "occasion_level_3:occasion%3Ewell%20done%3Enew%20job") {
+export async function searchProducts(size = 12, searchFacets = 'occasion_level_3:occasion%3Ewell%20done%3Enew%20job') {
   // https://search.moonpig.com/api/products?size=12&searchFacets=occasion_level_3:occasion%3Ewell%20done%3Enew%20job
 
   const url = `${searchUrl}?${searchSizeParam}=${size}&${searchFacetsParam}=${searchFacets}`;
@@ -31,8 +31,7 @@ export async function searchProducts(size = 12, searchFacets = "occasion_level_3
     console.log(data);
 
     return data;
-  }
-  catch (e) {
+  } catch (e) {
     console.error('error fetching');
     console.error(e);
     throw e;
@@ -59,8 +58,7 @@ export async function getProductDetails(productId) {
     console.log(data);
 
     return data;
-  }
-  catch (e) {
+  } catch (e) {
     console.error('error fetching');
     console.error(e);
     throw e;

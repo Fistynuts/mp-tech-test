@@ -7,9 +7,9 @@ describe('ProductDetailsWithRedux', () => {
       const state = {
         products: {
           isLoading: true,
-          error: "test error",
+          error: 'test error',
           detailProduct: {
-            field: "value"
+            field: 'value'
           }
         }
       };
@@ -46,10 +46,10 @@ describe('ProductDetailsWithRedux', () => {
       expect(dispatch).toHaveBeenCalledWith({
         payload: {
           params: {
-            mpProductId: "test456"
+            mpProductId: 'test456'
           }
         }, 
-        type: "GET_PRODUCT_DETAILS"
+        type: 'GET_PRODUCT_DETAILS'
       });
     });
   });

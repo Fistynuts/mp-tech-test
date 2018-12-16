@@ -5,7 +5,8 @@ import {
   getProductsErrored, 
   GET_PRODUCT_DETAILS, 
   getProductDetailsCompleted, 
-  getProductDetailsErrored } from './actions';
+  getProductDetailsErrored 
+} from './actions';
 import * as Api from '../api/products';
 
 function* getProductsSaga() {
@@ -13,8 +14,7 @@ function* getProductsSaga() {
   try {
     const response = yield call(Api.searchProducts);
     yield put(getProductsCompleted(response));
-  } 
-  catch (e) {
+  } catch (e) {
     console.error('error in getProductsSaga');
     yield put(getProductsErrored(e));
   }
@@ -29,8 +29,7 @@ function* getProductDetailsSaga(action) {
   try {
     const response = yield call(Api.getProductDetails, action.payload.params.mpProductId);
     yield put(getProductDetailsCompleted(response));
-  } 
-  catch (e) {
+  } catch (e) {
     console.error('error in getProductDetailsSaga');
     yield put(getProductDetailsErrored(e));
   }

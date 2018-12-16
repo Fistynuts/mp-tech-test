@@ -1,3 +1,24 @@
 {
-    "extends": "airbnb"
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "plugins": ["jest"],
+    "rules": {
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error",
+        "padded-blocks": "off",
+        "comma-dangle": "off",
+        "no-trailing-spaces": "off",
+        "eol-last": "off",
+        "no-console": "off",
+        "react/destructuring-assignment": { 
+            "ignoreClassFields": true 
+        }
+    },
+    "env": {
+        "jest/globals": true,
+        "browser": true
+    }
 }

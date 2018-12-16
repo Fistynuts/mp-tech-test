@@ -3,13 +3,13 @@ import { getProductDetails, searchProducts } from '../products';
 describe('Products API', () => {
   describe('getProductDetails', () => {
 
-    const testProductId = "test123";
+    const testProductId = 'test123';
     const testResponse = {
-      field: "value"
+      field: 'value'
     };
     const testError = new Error('this is a test error');
     const testInvalidResponse = {
-      error: "test error"
+      error: 'test error'
     };
     const testInvalidInit = {
       status: 404
@@ -25,7 +25,7 @@ describe('Products API', () => {
 
       await getProductDetails(testProductId);
 
-      expect(fetch.mock.calls.length).toEqual(1);
+      expect(fetch.mock.calls).toHaveLength(1);
       expect(fetch.mock.calls[0][0]).toEqual(`https://www.moonpig.com/uk/api/product/product/?mpn=${testProductId}`);
     });
 
@@ -54,17 +54,17 @@ describe('Products API', () => {
 
     const testResponse = [
       {
-        field: "value"
+        field: 'value'
       }
     ];
     const testError = new Error('this is a test error');
     const testInvalidResponse = {
-      error: "test error"
+      error: 'test error'
     };
     const testInvalidInit = {
       status: 404
     };
-    const testFacet = "testFacet";
+    const testFacet = 'testFacet';
     const testSize = 42;
 
     afterEach(() => {
@@ -77,8 +77,8 @@ describe('Products API', () => {
 
       await searchProducts();
 
-      expect(fetch.mock.calls.length).toEqual(1);
-      expect(fetch.mock.calls[0][0]).toEqual(`https://search.moonpig.com/api/products?size=12&searchFacets=occasion_level_3:occasion%3Ewell%20done%3Enew%20job`);
+      expect(fetch.mock.calls).toHaveLength(1);
+      expect(fetch.mock.calls[0][0]).toEqual('https://search.moonpig.com/api/products?size=12&searchFacets=occasion_level_3:occasion%3Ewell%20done%3Enew%20job');
     });
 
     it('should modify the URL if passed parameters', async () => {
@@ -87,7 +87,7 @@ describe('Products API', () => {
 
       await searchProducts(testSize, testFacet);
 
-      expect(fetch.mock.calls.length).toEqual(1);
+      expect(fetch.mock.calls).toHaveLength(1);
       expect(fetch.mock.calls[0][0]).toEqual(`https://search.moonpig.com/api/products?size=${testSize}&searchFacets=${testFacet}`);
     });
 

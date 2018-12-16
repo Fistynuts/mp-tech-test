@@ -10,4 +10,4 @@ export default class LoadingNotice extends React.PureComponent {
       </div>
     )
   }
-};
+}

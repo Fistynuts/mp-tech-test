@@ -1,7 +1,7 @@
-export const GET_PRODUCTS = "GET_PRODUCTS";
-export const GET_PRODUCTS_COMPLETED = "GET_PRODUCTS_COMPLETED";
-export const GET_PRODUCT_DETAILS = "GET_PRODUCT_DETAILS";
-export const GET_PRODUCT_DETAILS_COMPLETED = "GET_PRODUCT_DETAILS_COMPLETED";
+export const GET_PRODUCTS = 'GET_PRODUCTS';
+export const GET_PRODUCTS_COMPLETED = 'GET_PRODUCTS_COMPLETED';
+export const GET_PRODUCT_DETAILS = 'GET_PRODUCT_DETAILS';
+export const GET_PRODUCT_DETAILS_COMPLETED = 'GET_PRODUCT_DETAILS_COMPLETED';
 
 export const getProducts = () => ({
   type: GET_PRODUCTS
@@ -44,4 +44,4 @@ export const getProductDetailsErrored = error => ({
     error,
     product: null
   }
-})
+});

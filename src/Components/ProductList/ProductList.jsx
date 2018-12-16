@@ -13,7 +13,13 @@ export default class ProductList extends React.PureComponent {
     getProducts: PropTypes.func.isRequired,
     productCollection: PropTypes.arrayOf(PropTypes.any),
     isLoading: PropTypes.bool,
-    error: PropTypes.object
+    error: PropTypes.objectOf(PropTypes.any)
+  };
+
+  static defaultProps = {
+    productCollection: null,
+    isLoading: true,
+    error: null
   };
 
   componentDidMount() {
@@ -39,4 +45,4 @@ export default class ProductList extends React.PureComponent {
       </section>
     );
   }
-};
+}

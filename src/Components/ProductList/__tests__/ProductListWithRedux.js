@@ -7,10 +7,10 @@ describe('ProductListWithRedux', () => {
       const state = {
         products: {
           isLoading: true,
-          error: "test error",
+          error: 'test error',
           productCollection: [
             {
-              field: "value"
+              field: 'value'
             }
           ]
         }
@@ -45,7 +45,7 @@ describe('ProductListWithRedux', () => {
       props.getProducts();
 
       expect(dispatch).toHaveBeenCalledWith({
-        type: "GET_PRODUCTS"
+        type: 'GET_PRODUCTS'
       });
     });
   });

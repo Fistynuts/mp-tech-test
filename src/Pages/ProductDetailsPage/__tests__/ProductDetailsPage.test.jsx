@@ -7,7 +7,7 @@ describe('ProductDetailsPage', () => {
   const testProductId = 'abc123';
   const testMatch = {
     params: {
-      mpProductId:testProductId
+      mpProductId: testProductId
     }
   };
 

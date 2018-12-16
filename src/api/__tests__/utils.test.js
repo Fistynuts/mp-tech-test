@@ -3,21 +3,17 @@ import { getDataIfOk } from '../utils';
 describe('getDataIfOk', () => {
 
   const data = {
-    field: "value"
+    field: 'value'
   };
 
   const validResponse = {
     ok: true,
-    json: async () => {
-      return data;
-    }
+    json: async () => data
   };
 
   const invalidResponse = {
     ok: false,
-    json: async () => {
-      return data;
-    }
+    json: async () => data
   };
 
   it('should, if passed a valid response, return the contained JSON data', async () => {
