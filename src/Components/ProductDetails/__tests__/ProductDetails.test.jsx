@@ -413,6 +413,7 @@ describe('ProductDetails', () => {
     const app = shallow(<ProductDetails 
       getProductDetails={getProductDetails} 
       mpProductId={testProductId} 
+      isLoading={false}
     />);
 
     expect(app).toMatchSnapshot('default');
@@ -433,6 +434,7 @@ describe('ProductDetails', () => {
       getProductDetails={getProductDetails} 
       mpProductId={testProductId} 
       error={testError} 
+      isLoading={false}
     />);
 
     expect(app).toMatchSnapshot('error');
@@ -443,6 +445,7 @@ describe('ProductDetails', () => {
       getProductDetails={getProductDetails} 
       mpProductId={testProductId} 
       detailProduct={testProduct} 
+      isLoading={false}
     />);
 
     expect(app).toMatchSnapshot('product');
@@ -481,6 +484,7 @@ describe('ProductDetails', () => {
       getProductDetails={getProductDetails} 
       mpProductId={testProductId} 
       error={testError} 
+      isLoading={false}
     />);
 
     expect(app.find('ErrorNotice')).toHaveLength(1);
@@ -491,6 +495,7 @@ describe('ProductDetails', () => {
       getProductDetails={getProductDetails} 
       mpProductId={testProductId} 
       detailProduct={testProduct} 
+      isLoading={false}
     />);
 
     expect(app.find('.product-details--container')).toHaveLength(1);

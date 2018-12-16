@@ -4,6 +4,8 @@ exports[`ProductDetails should match the default snapshot: default 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ProductDetails
+    detailProduct={null}
+    error={null}
     getProductDetails={
       [MockFunction] {
         "calls": Array [
@@ -19,6 +21,7 @@ ShallowWrapper {
         ],
       }
     }
+    isLoading={false}
     mpProductId="testId"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -32,7 +35,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "function",
     "props": Object {},
     "ref": null,
     "rendered": null,
@@ -42,7 +45,7 @@ ShallowWrapper {
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {},
       "ref": null,
       "rendered": null,
@@ -73,6 +76,7 @@ exports[`ProductDetails should match the error snapshot: error 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ProductDetails
+    detailProduct={null}
     error={
       Object {
         "error": "TestError",
@@ -93,6 +97,7 @@ ShallowWrapper {
         ],
       }
     }
+    isLoading={false}
     mpProductId="testId"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -106,7 +111,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "function",
     "props": Object {},
     "ref": null,
     "rendered": null,
@@ -116,7 +121,7 @@ ShallowWrapper {
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {},
       "ref": null,
       "rendered": null,
@@ -147,6 +152,8 @@ exports[`ProductDetails should match the loading snapshot: loading 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ProductDetails
+    detailProduct={null}
+    error={null}
     getProductDetails={
       [MockFunction] {
         "calls": Array [
@@ -176,7 +183,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "function",
     "props": Object {},
     "ref": null,
     "rendered": null,
@@ -186,7 +193,7 @@ ShallowWrapper {
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {},
       "ref": null,
       "rendered": null,
@@ -611,6 +618,7 @@ ShallowWrapper {
         "UndeliverableDates": Array [],
       }
     }
+    error={null}
     getProductDetails={
       [MockFunction] {
         "calls": Array [
@@ -626,6 +634,7 @@ ShallowWrapper {
         ],
       }
     }
+    isLoading={false}
     mpProductId="testId"
   />,
   Symbol(enzyme.__renderer__): Object {

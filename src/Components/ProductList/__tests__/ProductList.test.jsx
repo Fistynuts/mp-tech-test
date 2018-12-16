@@ -106,22 +106,36 @@ describe('ProductList', () => {
   });
 
   it('should match the default snapshot', () => {
-    const app = shallow(<ProductList getProducts={getProducts} />);
+    const app = shallow(<ProductList 
+      getProducts={getProducts} 
+      isLoading={false} 
+    />);
     expect(app).toMatchSnapshot('default');
   });
 
   it('should match the loading snapshot', () => {
-    const app = shallow(<ProductList getProducts={getProducts} isLoading />);
+    const app = shallow(<ProductList 
+      getProducts={getProducts} 
+      isLoading 
+    />);
     expect(app).toMatchSnapshot('loading');
   });
 
   it('should match the error snapshot', () => {
-    const app = shallow(<ProductList getProducts={getProducts} error={testError} />);
+    const app = shallow(<ProductList 
+      getProducts={getProducts} 
+      error={testError} 
+      isLoading={false} 
+    />);
     expect(app).toMatchSnapshot('error');
   });
 
   it('should match the product results snapshot', () => {
-    const app = shallow(<ProductList getProducts={getProducts} productCollection={testProducts} />);
+    const app = shallow(<ProductList 
+      getProducts={getProducts} 
+      productCollection={testProducts} 
+      isLoading={false} 
+    />);
     expect(app).toMatchSnapshot('results');
   });
   
@@ -131,25 +145,40 @@ describe('ProductList', () => {
   });
 
   it('should contain a loading notice when loading', () => {
-    const app = shallow(<ProductList getProducts={getProducts} isLoading />);
+    const app = shallow(<ProductList 
+      getProducts={getProducts} 
+      isLoading 
+    />);
 
     expect(app.find('LoadingNotice')).toHaveLength(1);
   });
 
   it('should contain an error notice when passed an error', () => {
-    const app = shallow(<ProductList getProducts={getProducts} error={testError} />);
+    const app = shallow(<ProductList 
+      getProducts={getProducts} 
+      error={testError} 
+      isLoading={false}
+    />);
 
     expect(app.find('ErrorNotice')).toHaveLength(1);
   });
 
   it('should contain two ProductSummary components when passed the product results', () => {
-    const app = shallow(<ProductList getProducts={getProducts} productCollection={testProducts} />);
+    const app = shallow(<ProductList 
+      getProducts={getProducts} 
+      productCollection={testProducts} 
+      isLoading={false}
+    />);
 
     expect(app.find('ProductSummary')).toHaveLength(2);
   });
 
   it('should contain a no products found notice when passed an empty results array', () => {
-    const app = shallow(<ProductList getProducts={getProducts} productCollection={[]} />);
+    const app = shallow(<ProductList 
+      getProducts={getProducts} 
+      productCollection={[]} 
+      isLoading={false}
+    />);
 
     expect(app.find('.product-list--no-products-notice')).toHaveLength(1);
   });

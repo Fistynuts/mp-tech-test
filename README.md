@@ -15,18 +15,23 @@ Unit testing is via `jest` and `enzyme`. Coverage is 100% apart from the create-
 
 I tested for accessibility issues using the aXe plugin, see https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd.
 
-The site should be fairly responsive across a range of screen sizes. Flexbox was used for this - I tend to avoid media queries unless absolutely necessary. I also added `reset.css` to ensure consistent styling across browsers.
+I used `eslint` for static code analysis, using a modified version of the AirBnB and Jest presets.
+
+The site should be fairly responsive across a range of screen sizes. Flexbox was used for this - I tend to avoid media queries unless absolutely necessary. I also added `reset.css` to assist with consistent styling across browsers.
+
+Manual testing results - Chrome (ok), Firefox (unusual buy button placement, otherwise ok), Safari (ok)
 
 ### Next Steps
 
 Going further I would have liked to:
 
-. Add cross-browser/E2E testing using Selenium or Cypress
+. Add automated cross-browser/E2E testing using Selenium or Cypress
 . Add more details to the product results list and product details page
 . Implement further functionality, for example a shopping basket and checkout
 . Implement a nice error component with retry functionality
 . Implement a 404 page
 . Optimise bundle size
+. Make a CI/CD pipeline
 . Possibly enable offline usage for certain scenarios (using a service worker), depending on user need
 
 

@@ -4,6 +4,7 @@ exports[`ProductList should match the default snapshot: default 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ProductList
+    error={null}
     getProducts={
       [MockFunction] {
         "calls": Array [
@@ -17,6 +18,8 @@ ShallowWrapper {
         ],
       }
     }
+    isLoading={false}
+    productCollection={null}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -34,7 +37,7 @@ ShallowWrapper {
       "children": <h1
         className="product-list--no-products-notice"
       >
-        "No products were found"
+        No products were found
       </h1>,
       "className": "product-list--container",
     },
@@ -44,11 +47,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "\\"No products were found\\"",
+        "children": "No products were found",
         "className": "product-list--no-products-notice",
       },
       "ref": null,
-      "rendered": "\\"No products were found\\"",
+      "rendered": "No products were found",
       "type": "h1",
     },
     "type": "section",
@@ -62,7 +65,7 @@ ShallowWrapper {
         "children": <h1
           className="product-list--no-products-notice"
         >
-          "No products were found"
+          No products were found
         </h1>,
         "className": "product-list--container",
       },
@@ -72,11 +75,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "\\"No products were found\\"",
+          "children": "No products were found",
           "className": "product-list--no-products-notice",
         },
         "ref": null,
-        "rendered": "\\"No products were found\\"",
+        "rendered": "No products were found",
         "type": "h1",
       },
       "type": "section",
@@ -124,6 +127,8 @@ ShallowWrapper {
         ],
       }
     }
+    isLoading={false}
+    productCollection={null}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -145,7 +150,7 @@ ShallowWrapper {
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {},
       "ref": null,
       "rendered": null,
@@ -166,7 +171,7 @@ ShallowWrapper {
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {},
         "ref": null,
         "rendered": null,
@@ -199,6 +204,7 @@ exports[`ProductList should match the loading snapshot: loading 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ProductList
+    error={null}
     getProducts={
       [MockFunction] {
         "calls": Array [
@@ -213,6 +219,7 @@ ShallowWrapper {
       }
     }
     isLoading={true}
+    productCollection={null}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -234,7 +241,7 @@ ShallowWrapper {
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {},
       "ref": null,
       "rendered": null,
@@ -255,7 +262,7 @@ ShallowWrapper {
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {},
         "ref": null,
         "rendered": null,
@@ -288,6 +295,7 @@ exports[`ProductList should match the product results snapshot: results 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ProductList
+    error={null}
     getProducts={
       [MockFunction] {
         "calls": Array [
@@ -301,6 +309,7 @@ ShallowWrapper {
         ],
       }
     }
+    isLoading={false}
     productCollection={
       Array [
         Object {

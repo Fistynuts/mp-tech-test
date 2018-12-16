@@ -21,7 +21,7 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": "An error occurred",
-    "type": "div",
+    "type": "h1",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -33,7 +33,7 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": "An error occurred",
-      "type": "div",
+      "type": "h1",
     },
   ],
   Symbol(enzyme.__options__): Object {

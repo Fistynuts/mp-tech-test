@@ -3,15 +3,13 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ProductListingsPage from '../../Pages/ProductListingsPage/ProductListingsPage';
 import ProductDetailsPage from '../../Pages/ProductDetailsPage/ProductDetailsPage';
 
-export default class AppRouter extends React.PureComponent {
-  render() {
-    return (
-      <Router>
-        <div>
-          <Route path='/' exact component={ProductListingsPage} />
-          <Route path='/details/:mpProductId' component={ProductDetailsPage} />
-        </div>
-      </Router>
-    );
-  }
-}
+const AppRouter = () => (
+  <Router>
+    <div>
+      <Route path="/" exact component={ProductListingsPage} />
+      <Route path="/details/:mpProductId" component={ProductDetailsPage} />
+    </div>
+  </Router>
+);
+
+export default AppRouter;

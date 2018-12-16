@@ -14,6 +14,6 @@ function getStore() {
   sagaMiddleware.run(rootSaga);
   
   return store;
-};
+}
 
 export default getStore();
