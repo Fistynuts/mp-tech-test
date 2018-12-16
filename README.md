@@ -2,6 +2,8 @@
 
 Hi, here's my code for the Moonpig tech test.
 
+The production build of this project is hosted on CloudFront->S3 at https://d19wa4v5oczpm6.cloudfront.net/index.html
+
 The site was created via `create-react-app`. I used `yarn` as the package manager and task runner.
 
 Routing is handled by `react-router`/`react-router-dom` and state management by `redux` and `redux-saga`.
@@ -25,17 +27,18 @@ Manual testing results - Chrome (ok), Firefox (unusual buy button placement, oth
 
 Going further I would have liked to:
 
-. Add automated cross-browser/E2E testing using Selenium or Cypress
-. Add more details to the product results list and product details page
-. Implement further functionality, for example a shopping basket and checkout
-. Implement a nice error component with retry functionality
-. Implement a 404 page
-. Optimise bundle size
-. Make a CI/CD pipeline
-. Possibly enable offline usage for certain scenarios (using a service worker), depending on user need
+* Add automated cross-browser/E2E testing using Selenium or Cypress
+* Add more details to the product results list and product details page
+* Implement further functionality, for example a shopping basket and checkout
+* Implement a nice error component with retry functionality
+* Implement a 404 page
+* Optimise bundle size
+* Make a CI/CD pipeline
+* Possibly enable offline usage for certain scenarios (using a service worker), depending on user need
 
 
 Thanks for your time.
+
 
 Nigel
 
